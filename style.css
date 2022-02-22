@@ -75,3 +75,26 @@ main {
 .card:nth-child(3) a {
     color: hsl(179, 100%, 13%);
 }
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card:nth-child(1) {
+        background-color: hsl(31, 77%, 52%);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .card:nth-child(3) {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+}
